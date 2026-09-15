@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Split-viewfinder mark: two rounded frames sharing one record dot. -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,30h68a6,6 0 0 1 6,6v36a6,6 0 0 1 -6,6H20a6,6 0 0 1 -6,-6V36a6,6 0 0 1 6,-6z"
+        android:strokeWidth="0" />
+    <path
+        android:fillColor="#0B0D10"
+        android:pathData="M18,40h72v4H18z" />
+    <path
+        android:fillColor="#E63329"
+        android:pathData="M54,54m-8,0a8,8 0 1 1 16,0a8,8 0 1 1 -16,0" />
+    <path
+        android:fillColor="#0B0D10"
+        android:pathData="M30,24h12l-4,8H26zM66,24h12l-4,8H62z" />
+</vector>
