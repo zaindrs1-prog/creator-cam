@@ -85,7 +85,8 @@ class CameraCapabilityChecker(private val context: Context) {
                 videoSizes = sizes,
                 fpsRanges = fpsRanges,
                 opticalStabilization =
-                    chars.get(CameraCharacteristics.LENS_INFO_AVAILABLE_OPTICAL_STABILIZATION) == true,
+                    chars.get(CameraCharacteristics.LENS_INFO_AVAILABLE_OPTICAL_STABILIZATION)
+                        ?.contains(CameraMetadata.LENS_OPTICAL_STABILIZATION_MODE_ON) == true,
                 videoStabilizationModes =
                     chars.get(CameraCharacteristics.CONTROL_AVAILABLE_VIDEO_STABILIZATION_MODES)
                         ?: intArrayOf(),
