@@ -9,7 +9,7 @@ import com.creatorcam.app.compose.DualLayout
  */
 data class AppSettings(
     // Camera
-    val defaultLayout: DualLayout = DualLayout.SPLIT_VERTICAL,
+    val defaultLayout: DualLayout = DualLayout.SPLIT_50_50,
     val resolution: VideoResolution = VideoResolution.AUTO,
     val frameRate: FrameRate = FrameRate.AUTO,
     val mirrorFront: Boolean = true,
