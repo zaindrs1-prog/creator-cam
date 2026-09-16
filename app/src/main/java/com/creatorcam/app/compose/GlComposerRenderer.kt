@@ -139,7 +139,7 @@ class GlComposerRenderer {
         )
         val radiusPx = cornerRadiusFraction * minOf(viewportPx[2], viewportPx[3])
         GLES20.glUniform1f(oesRadius, radiusPx)
-        GLES20.glUniform2f(viewportPx[2].toFloat(), viewportPx[3].toFloat())
+        GLES20.glUniform2f(oesSize, viewportPx[2].toFloat(), viewportPx[3].toFloat())
 
         GLES20.glActiveTexture(GLES20.GL_TEXTURE0)
         GLES20.glBindTexture(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, texId)
