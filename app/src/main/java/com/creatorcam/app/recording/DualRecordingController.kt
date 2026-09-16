@@ -81,7 +81,7 @@ class DualRecordingController(private val context: Context) {
         val frontStartDeferred: CompletableDeferred<Long>,
         val rearFinalize: CompletableDeferred<FinalizeInfo>,
         val frontFinalize: CompletableDeferred<FinalizeInfo>?,
-        val recordJob: Job,
+        val recordJob: CompletableJob,
     )
 
     private data class FinalizeInfo(val ok: Boolean, val errorCode: Int, val cause: Throwable?)
