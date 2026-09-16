@@ -59,7 +59,7 @@ object QualityAdvisor {
                 else VideoResolution.FULL_HD_1080P
             }
             else -> wantResolution
-        }.let {ClampResolution(it, maxArea) }
+       }.let { clampResolution(it, maxArea) }
 
         val maxFps = active.map { info ->
             info.fpsRanges.maxOfOrNull { it.last } ?: 30
