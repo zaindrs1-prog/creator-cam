@@ -566,7 +566,7 @@ class CameraViewModel(app: Application) : AndroidViewModel(app) {
 
     private suspend fun pollHealth() {
         val app = getApplication<Application>()
-        while (isActive) {
+       while (coroutineContext.isActive) {
             val staging = FileUtil.stagingDir(app)
             val preflight = StorageGuard.preflight(staging, settings.resolution, dual = true)
             val pct = batteryThermal.batteryPercent()
